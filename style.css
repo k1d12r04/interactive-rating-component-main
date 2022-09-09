@@ -37,9 +37,13 @@ body {
   background-color: var(--clr-very-dark-blue);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -63,7 +67,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: rgba(124, 135, 152, 0.1);
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .illustration-container {
@@ -80,7 +84,7 @@ body {
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-heading);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .feedback__para,
@@ -97,7 +101,7 @@ body {
 .approval__result{
   position: relative;
   color: var(--clr-primary);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .approval__result::before{
@@ -116,12 +120,13 @@ body {
 .feedback__btns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .feedback__btn {
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
+  font-size: var(--fs-para);
   width: 4rem;
   height: 4rem;
   border: none;
@@ -131,6 +136,11 @@ body {
   opacity: 0.6;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+.style-with-click{
+  background-color: hsl(217, 12%, 63%);
+  opacity: 1;
 }
 
 .feedback__btn:hover {
@@ -159,4 +169,10 @@ body {
 .feedback__submit-btn:hover {
   background-color: var(--clr-white);
   color: var(--clr-primary);
+}
+
+@media only screen and (min-width: 50em){
+  body{
+    flex-direction: row;
+  }
 }
