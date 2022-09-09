@@ -1,2 +1,1 @@
 # interactive-rating-component-main
- 
